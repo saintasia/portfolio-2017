@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <div id="load"></div>
+        <nav>
+            <div class="wrap">
+                <a href="#top" class="name" data-scroll>ANA KASHKINOVA</a>
+                <ul>
+                    <li><a href="#work" data-scroll>WORKS</a></li>
+                    <li><a href="#about" data-scroll>ABOUT</a></li>
+                    <li><a href="#contact" data-scroll>CONTACT</a></li>
+                    <li><a href="ja.html">→日</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero" id="top">
+            <div class="overlay">
+                    <h1><span>ANA</span> KASHKINOVA</h1>
+                    <h5>WEB DESIGNER AND FRONTEND DEVELOPER</h5>
+                    <a class="down" href="#work" data-scroll></a>
+            </div>
+            <canvas></canvas>
+        </section>
+        <div class="button"><a href="#"><div class="arrow"><span class="bar1"></span><span class="bar2"></span></div></a></div>
+        <section class="work" id="work" ng-app="myApp">
+            <div class="wrap" ng-controller="myCtrl">
+                <h2>WORK</h2>
+                <h6>Check some of my latest projects</h6>
+                <div class="row-clear" ng-repeat="work in works">
+                    <div class="third-1">
+                        <a class="project" ng-click="openImg()"><img ng-src="{{work.Image}}"></a>
+                    </div>
+                    <div class="third-2">
+                        <h4>{{ work.Name }}</h4>
+                        <p>{{ work.TextEn }}</p>
+                        <p class="tags">{{ work.Tags }}</p>
+                        <a class="btn" href="{{work.Link}}" target="_blank" rel="nofollow">SEE LIVE ↗︎ </a>
+                    </div>
+                    <div class="full">
+                        <hr>
+                    </div>
+                </div>
+                <p class="hl">Other mini projects and code snippets</p>
+                <div class="row-clear">
+                    <div class="half">
+                        <a href="https://codepen.io/saintasia/" class="btn-lg btn" target="_blank"><img src="img/codepen.svg"></a>
+                        <p>CSS3 &amp; Javascript Code Snippets</p>
+                    </div>
+                    <div class="half">
+                        <a href="https://github.com/saintasia" target="_blank" class="btn-lg btn"><img src="img/github.svg"></a>
+                        <p>Front and Backend Mini Projects &amp; Plugins</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="wrap">
+                <h2>ABOUT</h2>
+                <h6>A little about myself</h6>
+                <p>Hi, my name is Ana, I am designer and front-end developer from Tokyo.
+                    I have started my web career from web and graphic design, but then discovered how captivating programming was do I taught myself Javascript, PHP and other technologies that help make web the magic place it is. 
+                    I am currently polishing my Javascript and striving to get deeper practical knowledge of back-end technologies to gradually become a full-stack web developer.</p>
+                <hr>
+                <p>SKILLS:</p>
+                <div class="badge high">
+                    <span>PS</span>
+                    <i class="devicons devicons-photoshop"></i>
+                </div>
+                <div class="badge high">
+                    <span>AI</span>
+                    <i class="devicons devicons-illustrator"></i>
+                </div>
+                <div class="badge high">
+                    <span>HTML5</span>
+                    <i class="devicons devicons-html5"></i>
+                </div>
+                <div class="badge high">
+                    <span>CSS3</span>
+                    <i class="devicons devicons-css3"></i>
+                </div>
+                <div class="badge high">
+                    <span>Sass</span>
+                    <i class="devicons devicons-sass"></i>
+                </div>
+                <div class="badge high">
+                    <span>Bootstrap</span>
+                    <i class="devicons devicons-bootstrap"></i>
+                </div>
+                <div class="badge avg">
+                    <span>jQuery</span>
+                    <i class="devicons devicons-jquery"></i>
+                </div>
+                <div class="badge avg">
+                    <span>JS</span>
+                    <i class="devicons devicons-javascript_badge"></i>
+                </div>
+                <div class="badge avg">
+                    <span>WP</span>
+                    <i class="devicons devicons-wordpress"></i>
+                </div>
+                <div class="badge avg">
+                    <span>PHP</span>
+                    <i class="devicons devicons-php"></i>
+                </div>
+                <div class="badge sm">
+                    <span>MySQL</span>
+                    <i class="devicons devicons-mysql"></i>
+                </div>
+                <div class="badge sm">
+                    <span>AngularJS</span>
+                    <i class="devicons devicons-angular"></i>
+                </div>
+            </div>
+        </section>
+        <footer id="contact">
+            <div class="wrap">
+                <p>copyright @ me 2017</p>
+                <ul class="social">
+                    <li><a href="https://github.com/saintasia" traget="_blank"><i class="devicons devicons-github"></i></a></li>
+                    <li><a href="https://codepen.io/saintasia/" traget="_blank"><i class="devicons devicons-codepen"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/anastasia-kashkinova-aa2874a3/" traget="_blank"><img src="img/linkedin.svg"></a></li>
+                </ul>
+                <p class="email">anastasia.kashkinova</p>
+            </div>
+        </footer>
+        <div class="modal">
+            <a class="close">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <img src="http://via.placeholder.com/600x600">
+        </div>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

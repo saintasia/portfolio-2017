@@ -1,0 +1,37 @@
+// vars
+$grey: #99a0b0;
+$lgrey: #bec3ce;
+$orange: #c95c60;
+$white: #fbfbfb;
+$trz: all 300ms ease-in-out;
+$smoothshadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+$medium: 768px;
+$small: 768px;
+
+// mixins
+
+@mixin box-shadow($bshadow){
+    -webkit-box-shadow: $bshadow;
+    -moz-box-shadow: $bshadow;
+    -o-box-shadow: $bshadow;
+    box-shadow: $bshadow;
+}
+
+@mixin transition($trz){
+    -webkit-transition: $trz;
+    -moz-transition: $trz;
+    -o-transition: $trz;
+    transition: $trz;
+}
+
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+$neat-grid: (
+  columns: 12,
+  gutter: 0,
+);
