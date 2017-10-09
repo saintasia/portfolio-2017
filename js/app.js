@@ -29,11 +29,11 @@ app.controller('myCtrl', function($scope){
             "Link" : "http://shibuweb.com/"
         },
         {
-            "Image" : "img/chitose.jpg",
-            "Name" : "NEW CHITOSE ERENTAKA RENEWAL",
-            "TextEn" : "New Chitose Car Rental wordpress site redesign, frontend renewal and backend updates such as plugin customization, php error fixing, and responsive development.",
-            "TextJa" : "新千歳レンタカーWordPressホームページの再デザイン、バックエンド更新、プラグインのカスタマイズ、フロントエンドリニューアル、レスポンシブ対応追加。",
-            "Tags" : "#php #wordpress #css3 #html5 #jquery #design #responsive",
+            "Image" : "img/kaitori.jpg",
+            "Name" : "Excia consultant line service landing",
+            "TextEn" : "A light responsive landing page for car related services using line mobile app",
+            "TextJa" : "中古車買取相談ラインサービスの軽いレスポンシブ対応ランディングページのデザインとコーディング。",
+            "Tags" : "#css3 #html5 #jquery #design #responsive",
             "Link" : "http://chitosekuukourentacar.com/"
         },
         {
