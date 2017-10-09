@@ -5,7 +5,9 @@ modalBox.addEventListener('click', function(event){
    event.preventDefault();
    if (this.classList.contains('mod-open')){
         this.classList.remove('mod-open');
-        modalBox.querySelector('img').src="";
+        setTimeout(function(){
+         modalBox.querySelector('img').src="";
+        },300);
     }
 });
 
