@@ -57,12 +57,8 @@ var maxRadius = 1;
 //var minRadius = 2;
 
 window.addEventListener('mousemove', function(event){
-    mouse.x = event.offsetX;
-    mouse.y = event.offsetY;
-    if (this !== event.target) {
-        mouse.x = mouse.x + event.target.offsetLeft;
-        mouse.y = mouse.y + event.target.offsetTop;
-    }
+    mouse.x = event.clientX;
+    mouse.y = event.clientY;
 });
 
 //listen for resize event 

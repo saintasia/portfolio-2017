@@ -209,6 +209,9 @@ nav {
             transform: translate(0, -5px) rotate(45deg);
         }
     }
+    @media only screen and (max-width: $small){
+        background-attachment: scroll;
+    }
 }
 
 .row-clear {
