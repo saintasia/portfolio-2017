@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Ana Kashkinova -- Designer & developer -- http://ana-webdev.site/
 
 # THANKS
 
-    <name>
+    Unsplash Photos
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, SASS, Javascript,
+    Apache Server Configs, Modernizr, Normalize.css
