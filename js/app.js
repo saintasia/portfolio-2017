@@ -34,7 +34,7 @@ app.controller('myCtrl', function($scope){
             "TextEn" : "A light responsive landing page for car related services using line mobile app",
             "TextJa" : "中古車買取相談ラインサービスの軽いレスポンシブ対応ランディングページのデザインとコーディング。",
             "Tags" : "#css3 #html5 #jquery #design #responsive",
-            "Link" : "http://chitosekuukourentacar.com/"
+            "Link" : "http://excia.jp/soudan/"
         },
         {
             "Image" : "img/consultant.jpg",
