@@ -1,3 +1,3 @@
 # My portfolio
-This is my personal portfolio as a web designer and front-end developer  
+Ana Kashkinova web designer and front-end developer personal portfolio  
 https://saintasia.github.io/portfolio/
