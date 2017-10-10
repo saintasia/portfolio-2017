@@ -27,11 +27,11 @@ document.onreadystatechange = function() {
   if (state == 'complete') {
       setTimeout(function(){
          document.getElementById('load').classList.add('fade');
-      },700);
+      },0);
       setTimeout(function(){
          document.getElementById('load').classList.add('fade');
          document.getElementById('load').style.visibility="hidden";
-      },1000);
+      },300);
   }
 };
 
@@ -57,8 +57,9 @@ var maxRadius = 1;
 //var minRadius = 2;
 
 window.addEventListener('mousemove', function(event){
-    mouse.x = event.clientX;
-    mouse.y = event.clientY;
+    console.log(event);
+    mouse.x = event.layerX;
+    mouse.y = event.layerY;
 });
 
 //listen for resize event 
