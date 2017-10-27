@@ -148,7 +148,7 @@ animate();
 
 // Initialize scroll
 smoothScroll.init({
-    speed: 500,
+    speed: 550,
     easing: 'easeInOutCubic',
     offset: 60,
     updateURL: true,
